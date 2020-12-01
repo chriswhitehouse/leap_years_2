@@ -35,4 +35,18 @@ describe '#leap_years' do
       expect(leap_years(2000,2012)).to eq [2000, 2004, 2008, 2012]
   end
 
+describe '#closest_year' do
+  it 'returns the closest year' do
+    expect(closest_year(2001)).to eq 2000
+  end
+
+  it 'returns the closest year' do
+    expect(closest_year(2003)).to eq 2004
+  end
+
+  it 'returns the closest year' do
+    expect(closest_year(2002)).to eq 2000
+  end
+end
+
 end
